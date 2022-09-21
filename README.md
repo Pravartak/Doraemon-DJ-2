@@ -45,7 +45,7 @@
 </p>
 
 <h3 align="center">
-    ─「 ᴄʀᴇᴅɪᴛs 」─
+    ─「 ᑕᖇᗴᗪITՏ 」─
 </h3>
 
 <p align="center">
