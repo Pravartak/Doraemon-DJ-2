@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from Doraemon import Carbon, YouTube, app
-from Doraemon.core.call import Anon
+from Doraemon.core.call import Doraemon
 from Doraemon.misc import db
 from Doraemon.utils.database import (add_active_chat,
                                        add_active_video_chat,
