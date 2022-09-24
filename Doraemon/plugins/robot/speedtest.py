@@ -13,9 +13,9 @@ def testspeed(m):
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = m.edit("**⇆ ʀᴜɴɴɪɴɢ ᴅᴏᴡɴʟᴏᴀᴅ sᴩᴇᴇᴅᴛᴇsᴛ...**")
+        m = m.edit("**↓ ᖇᑌᑎᑎIᑎᘜ ᗪOᗯᑎᒪOᗩᗪ ՏᑭᗴᗴᗪTᗴՏT...**")
         test.download()
-        m = m.edit("**⇆ ʀᴜɴɴɪɴɢ ᴜᴩʟᴏᴀᴅ sᴩᴇᴇᴅᴛᴇsᴛ...**")
+        m = m.edit("**↑ ᖇᑌᑎᑎIᑎᘜ ᑌᑭᒪOᗩᗪ ՏᑭᗴᗴᗪTᗴՏT...**")
         test.upload()
         test.results.share()
         result = test.results.dict()
@@ -30,18 +30,18 @@ async def speedtest_function(client, message):
     m = await message.reply_text("💫 TᖇYIᑎᘜ TO ᑕᕼᗴᑕK ᑌᑭᒪOᗩᗪ ᗩᑎᗪ ᗪOᗯᑎᒪOᗩᗪ Տᑭᗴᗴᗪ...")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
-    output = f"""✯ **sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs** ✯
+    output = f"""✯ **ՏᑭᗴᗴᗪTᗴՏT ᖇᗴՏᑌᒪTՏ** ✯
     
-<u>**❥͜͡ᴄʟɪᴇɴᴛ :**</u>
-**» __ɪsᴩ :__** {result['client']['isp']}
-**» __ᴄᴏᴜɴᴛʀʏ :__** {result['client']['country']}
+<u>**ᑕᒪIᗴᑎT :**</u>
+**» __IՏᑭ :__** {result['client']['isp']}
+**» __ᑕOᑌᑎTᖇY :__** {result['client']['country']}
   
-<u>**❥͜͡sᴇʀᴠᴇʀ :**</u>
-**» __ɴᴀᴍᴇ :__** {result['server']['name']}
-**» __ᴄᴏᴜɴᴛʀʏ :__** {result['server']['country']}, {result['server']['cc']}
-**» __sᴩᴏɴsᴏʀ :__** {result['server']['sponsor']}
-**» __ʟᴀᴛᴇɴᴄʏ :__** {result['server']['latency']}  
-**» __ᴩɪɴɢ :__** {result['ping']}"""
+<u>**Տᗴᖇᐯᗴᖇ :**</u>
+**» __ᑎᗩᗰᗴ :__** {result['server']['name']}
+**» __ᑕOᑌᑎTᖇY :__** {result['server']['country']}, {result['server']['cc']}
+**» __ՏᑭOᑎՏOᖇ :__** {result['server']['sponsor']}
+**» __ᒪᗩTᗴᑎᑕY :__** {result['server']['latency']}  
+**» __ᑭIᑎᘜ :__** {result['ping']}"""
     msg = await app.send_photo(
         chat_id=message.chat.id, 
         photo=result["share"], 
