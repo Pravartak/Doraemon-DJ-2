@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from Doraemon import LOGGER, app, userbot
-from Doraemon.core.call import Anon
+from Doraemon.core.call import Dora
 from Doraemon.plugins import ALL_MODULES
 from Doraemon.utils.database import get_banned_users, get_gbanned
 
