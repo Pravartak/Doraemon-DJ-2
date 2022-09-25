@@ -43,11 +43,11 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None)
+    "SUPPORT_CHANNEL", "")
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", "https://t.me/DORAEMONBOTSUPPORT")
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
@@ -94,7 +94,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "anonxlogs.txt"
+LOG_FILE_NAME = "doraemonlogs.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
