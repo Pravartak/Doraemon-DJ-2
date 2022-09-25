@@ -16,7 +16,7 @@ from Doraemon.utils.exceptions import AssistantErr
 from Doraemon.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from Doraemon.utils.inline.playlist import close_markup
-from Doraemon.utils.pastebin import Doraemonbin
+from Doraemon.utils.pastebin import Dorabin
 from Doraemon.utils.stream.queue import put_queue, put_queue_index
 from Doraemon.utils.thumbnails import gen_thumb
 
