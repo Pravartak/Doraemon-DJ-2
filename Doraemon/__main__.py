@@ -50,9 +50,9 @@ async def init():
         "Necessary Modules Imported Successfully."
     )
     await userbot.start()
-    await Doraemon.start()
+    await Dora.start()
     try:
-        await Doraemon.stream_call(
+        await Dora.stream_call(
             "https://telegra.ph/file/8d5db123638c2f6bb6ce4.mp4"
         )
     except NoActiveGroupCall:
@@ -62,7 +62,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await Doraemon.decorators()
+    await Dora.decorators()
     LOGGER("Doraemon").info("Music Bot Started Successfully")
     await idle()
 
