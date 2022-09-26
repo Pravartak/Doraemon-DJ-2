@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-<a href="https://telegram.me/Gamers_Lair"><img src="https://img.shields.io/badge/%20Anonymous-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/Gamers_Lair"><img src="https://img.shields.io/badge/%20Doraemon-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <h3 align="center">
