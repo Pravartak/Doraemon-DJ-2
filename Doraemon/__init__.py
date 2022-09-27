@@ -1,4 +1,4 @@
-from Doraemon.core.bot import Doraemon
+from Doraemon.core.bot import DoraemonBot
 from Doraemon.core.dir import dirr
 from Doraemon.core.git import git
 from Doraemon.core.userbot import Userbot
@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = Doraemon()
+app = DoraemonBot()
 
 # Assistant Client
 userbot = Userbot()
