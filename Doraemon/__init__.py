@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = Doraemon_DJ()
+app = Doraemon()
 
 # Assistant Client
 userbot = Userbot()
