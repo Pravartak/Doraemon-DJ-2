@@ -28,7 +28,7 @@ app = DoraemonBot()
 # Assistant Client
 userbot = Userbot()
 
-from Doraemon.platforms import *
+import * from .platforms
 
 YouTube = YouTubeAPI()
 Carbon = CarbonAPI()
